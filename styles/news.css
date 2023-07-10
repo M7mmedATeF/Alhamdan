@@ -1,0 +1,109 @@
+:root{
+    --main-color: #D0222B;
+    --main-bg: #fff;
+    --secondary-bg: #2F343C;
+}
+
+.news {
+    margin: 10rem 0;
+}
+
+.news .head h3{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.news .head p{
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+}
+
+.news .sliderContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.news .sliderContainer button{
+    will-change: background-color, transform;
+    cursor: pointer;
+    background-color: var(--secondary-bg);
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 3rem;
+    transform: translateY(-50%) rotate(0deg);
+    transition: 0.2s all ease-out;
+}
+
+.news .sliderContainer button:hover{
+    background-color: var(--main-color);
+}
+
+.news .sliderContainer .viewport{
+    position: relative;
+    width: 70vw;
+    margin-right: 3rem;
+    overflow-x: hidden;
+}
+
+.news .sliderContainer .counter{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 10;
+    color: #999;
+    transform: rotate(-90deg);
+}
+
+.news .sliderContainer a.readmore{
+    position: absolute;
+    bottom: -1.7rem;
+    left: 30.5%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.news .sliderContainer .viewport .slider{
+    will-change: left;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s left ease-in-out;
+}
+
+.news .sliderContainer .viewport .slider .slide{
+    display: inline-block;
+    padding: 0 2rem;
+    border-left: 1px solid #ddd;
+    color: #000;
+    min-width: calc(70vw / 3 - 1px);
+}
+
+.news .sliderContainer .viewport .slider .slide:last-child{
+    border-right: 1px solid #ddd;
+}
+
+.news .sliderContainer .viewport .slider .slide .headline{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.news .sliderContainer .viewport .slider .slide .date{
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.news .sliderContainer .viewport .slider .slide img{
+    width: 100%;
+}
+

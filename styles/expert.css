@@ -1,0 +1,89 @@
+:root{
+    --main-color: #D0222B;
+    --main-bg: #fff;
+    --secondary-bg: #2F343C;
+}
+
+.expert{
+    min-height: 100vh;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 4em 0;
+}
+
+.expert .headline{
+    text-align: center;
+}
+
+.expert .headline p{
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.expert .headline h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.expert .headline div{
+    width: 5%;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: 2rem auto 3rem;
+}
+
+.expert .exp {
+    padding: 10px 0;
+}
+
+.expert button {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 0.3px solid #fff;
+    font-weight: 100;
+}
+
+.expert .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.expert .details .left {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.expert .details_outer {
+    overflow: hidden;
+    display: none;
+    border-bottom: 0.3px solid #fff;
+}
+
+.expert .exp:first-child .details_outer {
+    overflow: hidden;
+    display: block;
+}
+
+.expert .right {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.expert .right a{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--main-color);
+}

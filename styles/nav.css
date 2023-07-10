@@ -1,0 +1,49 @@
+:root{
+    --main-color: #D0222B;
+    --main-bg: #fff;
+}
+
+nav{
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+nav h1 a{
+    display: block;
+    background-color:var(--main-color);
+    padding: 20px 3rem;
+    color: #fff;
+}
+
+nav h1 a img{
+    max-width: 200px;
+    max-height: 50px;
+}
+
+nav .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links ul li a {
+    will-change: color;
+    color: #000;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: 0.2s color ease-in;
+    font-weight: 500;
+}
+
+nav .links ul li.active a {
+    color: var(--main-color);
+}
+
+nav .links ul li a:hover {
+    color: var(--main-color);
+}
