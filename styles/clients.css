@@ -1,12 +1,6 @@
-:root{
-    --main-color: #D0222B;
-    --main-bg: #fff;
-    --secondary-bg: #2F343C;
-}
-
 .clients{
     position: relative;
-    height: 70vh;
+    height: 50vh;
     width: 100vw;
     background-image: url('../assets/photos/law.jpg');
     background-attachment: fixed;

@@ -1,9 +1,3 @@
-:root{
-    --main-color: #D0222B;
-    --main-bg: #fff;
-    --secondary-bg: #2F343C;
-}
-
 .join{
     display: flex;
     justify-content: center;
@@ -25,7 +19,7 @@
     background-color: transparent;
     padding: 20px 0;
     font-size: 1.5rem;
-    color: var(--main-color);
+    color: var(--main-light);
 }
 
 .cvForm .overlay{
@@ -87,10 +81,48 @@
     justify-content: space-between;
     align-items: flex-start;
     font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.cvForm form .formControls .row .file .filePrev{
+    display: none;
+    margin-top: 20px;
+}
+
+.cvForm form .formControls .row .file.added .filePrev{
+    display: block;
+    margin-top: 20px;
+}
+
+.cvForm form .formControls .row .file .filePrev .fileView{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+
+.cvForm form .formControls .row .file .filePrev .fileView p{
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.cvForm form .formControls .row .file .filePrev .fileView button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
 }
 
 .cvForm form .formControls .row .file .fileName{
     margin-top: 20px;
+}
+
+.cvForm form .formControls .row .file.added .fileName{
+    display: none;
 }
 
 .cvForm form .formControls .row .file span{
@@ -131,6 +163,8 @@
 }
 
 .cvForm form .formControls .formControl.msg textarea{
+    padding: 5px;
+    margin-top: 20px;
     border: 1px solid #999;
     font-size: 2rem;
     width: 55rem;

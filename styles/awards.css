@@ -1,0 +1,49 @@
+.awards{
+    padding: 3rem 0 10rem;
+    background-color: var(--secondary-bg);
+    color: #fff;
+}
+
+.awards .headline h3{
+    font-size: 1.5rem;
+    margin: 5rem 0;
+}
+
+.awards .container{
+    width: 70%;
+}
+
+.awards .award{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 20px;
+    padding: 2rem 3rem;
+    padding-left: 5rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.awards .award::before{
+    content: attr(year);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 12px;
+}
+
+.awards .award .name{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.awards .award .from{
+    color: #c2c7d0;
+}
+
+.awards .all {
+    display: inline-block;
+    padding: 4rem 0;
+    color: var(--main-light);
+}
