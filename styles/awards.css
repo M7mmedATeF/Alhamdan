@@ -40,10 +40,29 @@
 
 .awards .award .from{
     color: #c2c7d0;
+    font-size: 1rem;
 }
 
 .awards .all {
     display: inline-block;
     padding: 4rem 0;
     color: var(--main-light);
+}
+
+@media only screen and (max-width: 426px) {
+    
+    .awards .container{
+        width: 90%;
+    }
+
+    .awards .award .name{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 426px) { 
+    .awards{
+        padding: 3rem 0 0;
+    }
 }

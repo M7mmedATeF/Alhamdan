@@ -7,23 +7,26 @@ let slideINDEX = 0;
 let moveToRight = true;
 let lateClick = false
 let autoPlay = true;
+let reviewCanPlay = clientSlideCount != 0
 
 BTNs[0].addEventListener('click', ()=>{
     lateClick = true;
-    if(slideINDEX != 0){
-        clientPos += clientSlideWidth
-        slideINDEX--;
-        sliderContainer.style.left = clientPos + "px";
-    }
+    if(reviewCanPlay)
+        if(slideINDEX != 0){
+            clientPos += clientSlideWidth
+            slideINDEX--;
+            sliderContainer.style.left = clientPos + "px";
+        }
 })
 
 BTNs[1].addEventListener('click', ()=>{
     lateClick = true;
-    if(slideINDEX != clientSlideCount-1){
-        clientPos -= clientSlideWidth;
-        slideINDEX++;
-        sliderContainer.style.left = clientPos + "px"
-    }
+    if(reviewCanPlay)
+        if(slideINDEX != clientSlideCount-1){
+            clientPos -= clientSlideWidth;
+            slideINDEX++;
+            sliderContainer.style.left = clientPos + "px"
+        }
 })
 
 BTNs[2].addEventListener('click', ()=>{

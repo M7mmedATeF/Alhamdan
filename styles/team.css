@@ -41,7 +41,6 @@
 }
 
 .team .info .viewport{
-    background-color: #999;
     width: 422px;
     height: 516px;
     overflow: hidden;
@@ -57,13 +56,14 @@
 .team .info .viewport .slider .slide{
     width: 422px;
     height: 516px;
+    padding: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 .team .info .viewport .slider .slide img{
-    width: 100%;
+    object-fit: cover;
 }
 
 .team .info .controls{
@@ -108,3 +108,60 @@
     display: none;
 }
 
+@media only screen and (max-width: 769px) {
+
+    .team .info .viewport{
+        width: 250px;
+        height: 316px;
+    }
+    
+    .team .info .viewport .slider .slide{
+        width: 250px;
+        height: 316px;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .team {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .team .info {
+        position: static;
+    }
+}
+
+
+@media only screen and (max-width: 426px) {
+    .team{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
+    .team .img img{
+        display: none;
+    }
+    
+    .team .img a{
+        margin: 0;
+    }
+
+    .team .info p {
+        margin: 0 20px 20px;
+        text-align: center;
+    }
+    
+    .team .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team .info .controls{
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem 0;
+    }
+}

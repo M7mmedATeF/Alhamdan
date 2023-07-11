@@ -8,6 +8,7 @@
     padding: 4em 0;
     counter-reset: exp;
 }
+
 .expert .container-m{
     width: 95%;
 }
@@ -85,4 +86,20 @@
 
 .expert .spliter .exp a.all::before{
     display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .expert .spliter .exp a ion-icon{
+        margin-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 426px) { 
+    .expert .spliter{
+        grid-template-columns: 1fr;
+    }
+    
+    .expert .spliter .img{
+        display: none;
+    }
 }

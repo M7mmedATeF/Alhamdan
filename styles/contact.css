@@ -42,3 +42,31 @@
 .contact .contacts a ion-icon{
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 769px) {
+    .contact .contacts{
+        background-color: #ccc;
+        min-height: 60vh;
+        padding: 2rem 20px;
+        padding-left: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 426px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact iframe {
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .contact .contacts{
+        min-height: auto;
+        padding: 2rem 20px;
+        padding-left: 2rem;
+    }
+}

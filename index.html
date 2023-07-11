@@ -22,25 +22,28 @@
 </head> 
 <body>
     
-    <header>
-        <nav>
-            <div class="logo">
-                <h1><a href="/"><img src="./assets/logo.png" alt="Logo"></a></h1>
-            </div>
-            <div class="links">
-                <ul>
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#news">News & Insights</a></li>
-                    <li><a href="#awards">Awards</a></li>
-                    <li><a href="#joinus">Join us</a></li>
-                    <li><a href="#contact">Contact us</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav>
+        <div class="logo">
+            <h1><a href="/"><img src="./assets/logo.png" alt="Logo"></a></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a class="lower" href="#news">News & Insights</a></li>
+                <li><a class="lower" href="#awards">Awards</a></li>
+                <li><a class="lower" href="#joinus">Join us</a></li>
+                <li><a class="lower" href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="sideNav">
+            <button id="navBTN"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
 
+    <header>
         <section class="landingVideo" id="home">
             <video src="./assets/videos/landingVideo.mp4" autoplay loop></video>
             <div class="overlay">
@@ -184,16 +187,18 @@
         </div>
 
         <div class="sliderContainer">
-            <button><i class="fa-solid fa-angle-left"></i></button>
-            <p class="counter"><span class="num">179</span> Article</p>
-            <a class="readmore" href="#">
-                <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
-                    <path d="M41 5.5H0H41Z" fill="currentColor"></path>
-                    <path d="M41 5.5H0" stroke="currentColor"></path>
-                </svg>
-                All News & Articles
-            </a>
+            <div class="controls">
+                <button><i class="fa-solid fa-angle-left"></i></button>
+                <p class="counter"><span class="num">179</span> Article</p>
+                <a class="readmore" href="#">
+                    <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
+                        <path d="M41 5.5H0H41Z" fill="currentColor"></path>
+                        <path d="M41 5.5H0" stroke="currentColor"></path>
+                    </svg>
+                    All News & Articles
+                </a>
+            </div>
             <div class="viewport">
                 <div class="slider">
                     <a href="#" class="slide">
