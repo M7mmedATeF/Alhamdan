@@ -8,7 +8,7 @@
 }
 
 .landingVideo video{
-    object-fit: cover;
+    width: 100%;
 }
 
 .landingVideo .overlay{
@@ -74,6 +74,10 @@
 @media only screen and (max-width: 426px) {
     .landingVideo .overlay p{
         font-size: 3rem;
+    }
+    
+    .landingVideo video{
+        object-fit: cover;
     }
 }
 

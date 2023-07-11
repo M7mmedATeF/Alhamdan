@@ -26,6 +26,7 @@
     position: fixed;
     inset: 0;
     background-color: #000000a7;
+    z-index: 21;
 }
 
 .cvForm {
@@ -51,6 +52,7 @@
     align-items: center;
     flex-direction: column;
     padding: 5rem 3rem 2rem 3rem;
+    z-index: 21;
 }
 
 .cvForm form h5{
@@ -196,12 +198,7 @@
     }
 
     .cvForm form{
-        z-index: 21;
         width: 50vw;
-    }
-
-    .cvForm .overlay{
-        z-index: 21;
     }
 
     .cvForm form .formControls .formControl{
@@ -214,6 +211,7 @@
 
     .cvForm form .formControls .formControl.msg textarea{
         width: 100%;
+        font-size: 1.5rem;
     }
 
     .cvForm form .formControls .formControl input{
@@ -228,5 +226,9 @@
 
     .join .img{
         margin-bottom: 2rem;
+    }
+
+    .cvForm form{
+        width: 90vw;
     }
 }
