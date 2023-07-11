@@ -1,0 +1,56 @@
+:root{
+    --main-color: #26321B;
+    --main-light: #52891e;
+    --main-bg: #fff;
+    --secondary-bg: #1C1D30;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: SuisseIntl, sans-serif;
+    text-decoration: none;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "SuisseIntl";
+    src:  url('../assets/fonts/ltzawi.ttf') format('embedded-opentype'),  /* Internet Explorer */
+          url('../assets/fonts/ltzawi.ttf') format('woff2'),             /* Super Modern Browsers */
+          url('../assets/fonts/ltzawi.ttf') format('woff'),              /* Pretty Modern Browsers */
+          url('../assets/fonts/ltzawi.ttf') format('truetype'),          /* Safari, Android, iOS */
+          url('../assets/fonts/ltzawi.ttf') format('svg');               /* Legacy iOS */
+}
+
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #eee;
+}
+
+svg {
+    margin-right: 20px;
+    transition: 0.2s margin ease-in;
+    transform: rotate(180deg);
+}
+
+a:hover svg, button:hover svg{
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 769px) {
+    html{
+        font-size: 12px;
+    }
+}

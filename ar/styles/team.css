@@ -1,0 +1,169 @@
+.team{
+    direction: ltr;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 70vh;
+    margin: 10rem 0;
+}
+
+.team .info {
+    position: relative;
+    top: 15vh;
+}
+
+.team .info h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: right;
+}
+
+.team .info p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+    line-height: 2rem;
+    text-align: right;
+}
+
+.team .img{
+    text-align: right;
+    padding: 3rem;
+}
+
+.team .img img{
+    width: 100%;
+}
+
+.team .img a{
+    display: inline-block;
+    color: var(--main-light);
+    font-size: 1.2rem;
+    margin: 3rem 0;
+}
+
+.team .info .viewport{
+    width: 422px;
+    height: 516px;
+    overflow: hidden;
+}
+
+.team .info .viewport .slider{
+    display: inline-flex;
+    position: relative;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+}
+
+.team .info .viewport .slider .slide{
+    width: 422px;
+    height: 516px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .info .viewport .slider .slide img{
+    object-fit: cover;
+}
+
+.team .info .controls{
+    display: flex;
+    justify-content: flex-end;
+    margin: 3rem 10px;
+}
+
+.team .info .controls button{
+    cursor: pointer;
+    will-change: padding;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: 0.2s padding ease-in;
+}
+
+.team .info .controls button:hover{
+    padding: 10px 30px;
+}
+
+.team .info .controls button:nth-child(2){
+    border-left: none;
+    border-right: none;
+}
+
+.team button.control i:first-child{
+    display: none;
+}
+
+.team button.control.play i:last-child{
+    display: inline-block;
+}
+
+.team button.control.play i:first-child{
+    display: inline-block;
+}
+
+.team button.control.play i:last-child{
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+
+    .team .info .viewport{
+        width: 250px;
+        height: 316px;
+    }
+    
+    .team .info .viewport .slider .slide{
+        width: 250px;
+        height: 316px;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .team {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .team .info {
+        position: static;
+    }
+}
+
+
+@media only screen and (max-width: 426px) {
+    .team{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
+    .team .img img{
+        display: none;
+    }
+    
+    .team .img a{
+        margin: 0;
+    }
+
+    .team .info p {
+        margin: 0 20px 20px;
+        text-align: center;
+    }
+    
+    .team .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team .info .controls{
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem 0;
+    }
+}

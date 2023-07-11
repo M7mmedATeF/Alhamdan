@@ -1,0 +1,105 @@
+.expert{
+    min-height: 100vh;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 4em 0;
+    counter-reset: exp;
+}
+
+.expert .container-m{
+    width: 95%;
+}
+
+.expert .headline p{
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.expert .headline p:last-child{
+    margin-top: 20px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 11rem;
+}
+
+.expert .headline h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.expert .spliter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.expert .spliter .img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.expert .spliter .exp{
+    display: flex;
+    flex-direction: column;
+}
+
+.expert .spliter .exp a{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 2rem 20px;
+    padding-right: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.expert .spliter .exp a ion-icon{
+    transform: rotate(45deg);
+    margin-left: 8rem;
+    font-size: 1.5rem;
+}
+
+.expert .spliter .exp a::before{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 14px;
+    transform: translateY(-50%);
+    counter-increment: exp;
+    content: '00-' counter(exp);
+}
+
+.expert .spliter .exp a.all{
+    display: block;
+    font-size: 1rem;
+    padding-right: 0px;
+    border-bottom: none;
+    color: var(--main-light);
+}
+
+.expert .spliter .exp a.all::before{
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .expert .spliter .exp a ion-icon{
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 426px) { 
+    .expert .spliter{
+        grid-template-columns: 1fr;
+    }
+    
+    .expert .spliter .img{
+        display: none;
+    }
+}
