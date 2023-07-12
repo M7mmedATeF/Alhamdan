@@ -29,7 +29,7 @@ leftBTN.addEventListener('click', ()=>{
         if(screen.width <= 425)
             leftBTN.style.transform = " rotate(180deg)"
         else
-            leftBTN.style.transform = " translateY(-50%) rotate(180deg)"
+            leftBTN.style.transform = " rotate(180deg)"
     else
         if(screen.width <= 425)
                 leftBTN.style.transform = " rotate(0deg)"

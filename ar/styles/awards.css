@@ -1,5 +1,6 @@
 .awards{
-    padding: 3rem 0 10rem;
+    padding: 3rem 0 0;
+    margin-bottom: 10vh;
     background-color: var(--secondary-bg);
     color: #fff;
 }

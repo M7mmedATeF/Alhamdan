@@ -29,10 +29,10 @@
     color: #fff;
     padding: 20px 30px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 6.8rem;
     font-size: 3rem;
-    transform: translateY(-50%) rotate(0deg);
+    transform: rotate(0deg);
     transition: 0.2s all ease-out;
 }
 

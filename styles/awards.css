@@ -1,5 +1,6 @@
 .awards{
-    padding: 3rem 0 10rem;
+    padding: 3rem 0 0;
+    margin-bottom: 10vh;
     background-color: var(--secondary-bg);
     color: #fff;
 }
@@ -49,20 +50,21 @@
     color: var(--main-light);
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 769px) {
     
     .awards .container{
-        width: 90%;
+        width: 100%;
     }
-
-    .awards .award .name{
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
+    
 }
 
 @media only screen and (max-width: 426px) { 
     .awards{
         padding: 3rem 0 0;
+    }
+
+    .awards .award .name{
+        font-size: 1.5rem;
+        font-weight: 300;
     }
 }
