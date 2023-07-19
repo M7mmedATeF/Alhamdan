@@ -1,7 +1,8 @@
-nav{
+nav {
     position: sticky;
     top: 0;
     z-index: 20;
+    height: 14vh;
     background-color: var(--main-bg);
     display: flex;
     align-items: center;
@@ -10,25 +11,27 @@ nav{
     box-shadow: 0px 2px 20px #00000029;
 }
 
-nav *{
+nav * {
     position: relative;
     z-index: 2;
 }
 
-nav .sideNav{
+nav .sideNav {
     display: none;
 }
 
-nav h1 a{
-    display: block;
-    background-color:var(--main-color);
+nav h1 a {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 14vh;
     padding: 20px 3rem;
     color: #fff;
 }
 
-nav h1 a img{
+nav h1 a img {
     max-width: 200px;
-    max-height: 50px;
+    max-height: 14vh;
 }
 
 nav .links ul {
@@ -38,68 +41,125 @@ nav .links ul {
     align-items: center;
 }
 
+nav .links ul li {
+    position: relative;
+}
+
 nav .links ul li a {
     will-change: color;
+    white-space: nowrap;
     color: #000;
+    width: 100%;
     padding: 15px;
     font-size: 14px;
     transition: 0.2s color ease-in;
     font-weight: 400;
 }
 
-nav .links ul li a:hover, nav .links ul li.active a {
+nav .links ul li a:hover,
+nav .links ul li.active a {
     color: var(--main-light);
 }
 
-nav .sideNav button{
+nav .sideNav button {
     font-size: 2rem;
     padding: 5px 0px 5px 20px;
     background-color: transparent;
+    color: var(--main-color);
 }
 
-@media only screen and (max-width: 1025px) {
-    nav .links ul li a {
-        padding: 15px 8px;
-    }
+nav .links ul li ul {
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--main-bg);
+    padding: 10px;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px #00000022;
+    transition: 0.2s all ease-in-out;
 }
+
+nav .links ul li:hover ul {
+    top: 120%;
+    opacity: 1;
+    pointer-events: all;
+}
+
+nav .links ul li ul li {
+    width: 100%;
+}
+
+nav .links ul li ul a {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
 
 @media only screen and (max-width: 769px) {
-    nav .sideNav{
+    nav .sideNav {
         display: block;
     }
 
-    nav .links{
+    nav .links {
         position: absolute;
         top: -90vh;
         z-index: 1;
         transition: 0.3s top ease-in-out;
     }
 
-    nav .links.show{
-        top: 12vh;
+    nav .links.show {
+        top: 14vh;
     }
 
-    nav .links ul{
+    nav .links ul {
         padding: 2rem 0;
         flex-direction: column;
         width: 100vw;
-        height: 90vh;
+        height: 86vh;
+        overflow-y: auto;
         background-color: #fff;
         justify-content: flex-start;
     }
 
-    nav .links ul li{
+    nav .links ul li ul {
+        opacity: 1;
+        pointer-events: all;
+        display: grid;
+        grid-template-rows: 0 0;
+        overflow: hidden;
+        height: auto;
+        position: static;
+        padding: 0;
+        box-shadow: none;
+        transition: 0.2s all ease-in-out;
+    }
+
+    nav .links ul li:hover ul {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    nav .links ul li ul li a {
+        font-size: 1.5rem;
+        padding-left: 8rem;
+    }
+
+    nav .links ul li {
         width: 100%;
     }
 
-    nav .links ul li a{
+    nav .links ul li a {
         font-size: 2rem;
         font-weight: 400;
         padding: 1rem 5rem;
         display: block;
     }
 
-    nav .links ul li a.lower{
+    nav .links ul li a.lower {
         font-size: 1.2rem;
         padding: 1rem 5rem;
         display: block;
@@ -107,7 +167,7 @@ nav .sideNav button{
 }
 
 @media only screen and (max-width: 321px) {
-    nav h1 a img{
+    nav h1 a img {
         max-width: 150px;
         max-height: 50px;
     }

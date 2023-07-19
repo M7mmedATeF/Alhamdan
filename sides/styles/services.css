@@ -1,0 +1,102 @@
+.servicesInner .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 3rem 0;
+}
+
+.servicesInner .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.servicesInner .container .service {
+    background-color: #fff;
+    box-shadow: 0 0 20px #0000000a;
+    color: var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s box-shadow ease-in-out;
+}
+
+.servicesInner .container .service:hover {
+    box-shadow: 0 0 20px #00000023;
+}
+
+.servicesInner .container .service .details {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    padding: 20px 2rem;
+    font-size: 1.2rem;
+}
+
+.servicesInner .container .service .details .more {
+    display: inline-flex;
+    align-items: center;
+    text-transform: lowercase;
+    font-size: 0.8rem;
+}
+
+.servicesInner .container .service .details .more ion-icon {
+    margin-left: 10px;
+}
+
+.aboutUsInner.service .head .img {
+    max-height: 70vh;
+}
+
+.aboutUsInner.service .head a {
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 769px) {
+    .servicesInner .container .service .details {
+        padding: 10px 2rem;
+        font-size: 1rem;
+    }
+
+    .servicesInner .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .servicesInner .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .aboutUsInner.service .head .img {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100vh;
+    }
+
+    .aboutUsInner.service .head .img img {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+    .aboutUsInner.service .head {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .aboutUsInner.service .head .img {
+        display: none;
+    }
+
+    .aboutUsInner.service .head {
+        grid-template-columns: 1fr;
+    }
+}

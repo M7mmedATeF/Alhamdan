@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/fav.png" type="image/png">
-    <title>Home</title>
+    <title>HA | Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-grid.min.css" integrity="sha512-EAgFb1TGFSRh1CCsDotrqJMqB2D+FLCOXAJTE16Ajphi73gQmfJS/LNl6AsjDqDht6Ls7Qr1KWsrJxyttEkxIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/awards.css">
     <link rel="stylesheet" href="./styles/expert.css">
     <link rel="stylesheet" href="./styles/news.css">
     <link rel="stylesheet" href="./styles/clients.css">
@@ -28,14 +27,18 @@
         </div>
         <div class="links">
             <ul>
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a class="lower" href="#news">News & Insights</a></li>
-                <li><a class="lower" href="#awards">Awards</a></li>
-                <li><a class="lower" href="#joinus">Join us</a></li>
-                <li><a class="lower" href="#contact">Contact us</a></li>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="./sides/aboutus.html">About us</a></li>
+                <li><a href="./sides/services.html">Services</a></li>
+                <li><a href="./sides/ourTeam.html" class="teamLinks">Team</a>
+                    <ul>
+                        <li><a href="./sides/ourTeam.html">Out Team</a></li>
+                        <li><a href="./sides/partners.html">Out Parteners</a></li>
+                    </ul>
+                </li>
+                <li><a class="lower" href="./sides/news.html">News & Insights</a></li>
+                <li><a class="lower" href="./sides/joinUs.html">Join us</a></li>
+                <li><a class="lower" href="./sides/contactUs.html">Contact us</a></li>
             </ul>
         </div>
         <div class="sideNav">
@@ -53,7 +56,7 @@
 
             <a class="scroll" href="#about">
                 <button class="mouse">
-                    <span class="scroller"></div>
+                    <span class="scroller"></span>
                 </button>
             </a>
         </section>
@@ -67,7 +70,7 @@
             <div class="text">
                 <h3>Our Story</h3>
                 <p>AlHamdan & Alaamri is a Law Firm based in Saudi Arabia which offers a full range of legal services for both national and international clients. We offer first-tier legal services that are both efficient and integrated via a team of top Saudi Arabian and international qualified attorneys that provide assistance in a variety of practice areas.</p>
-                <a href="#">
+                <a href="./sides/aboutus.html">
                     <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
                         <path d="M41 5.5H0H41Z" fill="currentColor"></path>
@@ -78,54 +81,6 @@
             </div>
         </section>
     </div>
-
-    <section class="awards" id="awards">
-        <div class="container awardsCont">
-            <div class="headline">
-                <h3>Awards</h3>
-            </div>
-            <div class="award" year="2023">
-                <p class="name">
-                    Local Currency Bank/FI Bond Deal of the Year
-                </p>
-                <p class="from">
-                    Capital Markets & ESG Finance Saudi Arabia Awards 2022
-                </p>
-            </div>
-            <div class="award" year="2023">
-                <p class="name">
-                    Social Infrastructure Finance Deal of the Year
-                </p>
-                <p class="from">
-                    Capital Markets & ESG Finance Saudi Arabia Awards 2022
-                </p>
-            </div>
-            <div class="award" year="2023">
-                <p class="name">
-                    International IPO/Equity Capital Markets Deal of the Year
-                </p>
-                <p class="from">
-                    Capital Markets & ESG Finance Saudi Arabia Awards 2022
-                </p>
-            </div>
-            <div class="award" year="2023">
-                <p class="name">
-                    Capital Markets Legal Adviser of the Year
-                </p>
-                <p class="from">
-                    Capital Markets & ESG Finance Saudi Arabia Awards 2022
-                </p>
-            </div>
-            <a href="#" class="all">
-                <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
-                    <path d="M41 5.5H0H41Z" fill="currentColor"></path>
-                    <path d="M41 5.5H0" stroke="currentColor"></path>
-                </svg>
-                All Awards
-            </a>
-        </div>
-    </section>
 
     <section class="expert" id="services">
         <div class="container">
@@ -139,38 +94,117 @@
                         <h3>Services</h3>
                         <p>We have a deep bench with a strong multidisciplinary team of over fifty lawyers, professionals, and specialists covering:</p>
                     </div>
+
                     <div class="exp">
-                        <a href="#">
-                            <span>Corporate and M&As</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <span>Arbitration</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <span>Litigation</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <span>Corporate Governance</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <span>Labour Consultations</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <span>NOTARIZATION</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
-                        <a href="#" class="all">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                Corporate and M&As
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer" style="display: block;">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            H&A's Corporate team consists of professionals who have the capacity to provide legal services and handle numerous corporate transactions such as, incorporating new companies, managing foreign investments, drafting, and choose the best formation of their business.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                Arbitration
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            Arbitration is an alternative mean of dispute resolution that differs from the process of resolving a dispute through a lengthy and costly trial. H&A’s Arbitration team consists of accredited arbitrators who have handled and settled various disputes through Arbitration either as arbitrators or representative of a party.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                Litigation
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            We pride ourselves on having a qualified and experienced lawyers who represent our clients and plead all cases of concern at all stages of the proceedings before all judicial and quasi-judicial bodies in the Kingdom of Saudi Arabia including General Courts, Commercial Courts, Labour Courts, Enforcement Courts
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                Corporate Governance
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            An effective corporate governance is an essential key to the success of a company. Our CG team will work on implementing the up-to-date foundations of corporate governance and compliance to match and meet interest of the business and its stakeholders. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                Labour Consultations
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            Our team has dedicated its efforts in preparing and providing numerous consultations, studies, contracts, and regulation in relation to employees and employment in accordance with the Saudi Labour Law. The team has provided legal services related to employment such as drafting employment and professional training contracts, drafting the work organization regulations, and providing the labour consultations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="expInner">
+                            <button class="col-sm-12 sliderBTN">
+                                NOTARIZATION
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                            <div class="details_outer">
+                                <div class="details">
+                                    <div class="left">
+                                        <p>
+                                            Our team includes licensed and accredited notary publics to undertake the judicial notarization and notarize the legal transactions, issuing or revoking power of attorneys, notarization of company’s articles of association in addition to notarizing the transfer of property deeds and financial disclosures in the middle, west and east regions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <a href="./sides/services.html" class="all">
                             <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
                                 <path d="M41 5.5H0H41Z" fill="currentColor"></path>
                                 <path d="M41 5.5H0" stroke="currentColor"></path>
                             </svg>
-                            <span>All practice areas</span>
+                            See More
                         </a>
                     </div>
                 </div>
@@ -190,7 +224,7 @@
             <div class="controls">
                 <button><i class="fa-solid fa-angle-left"></i></button>
                 <p class="counter"><span class="num">179</span> Article</p>
-                <a class="readmore" href="#">
+                <a class="readmore" href="./sides/news.html">
                     <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
                         <path d="M41 5.5H0H41Z" fill="currentColor"></path>
@@ -342,16 +376,41 @@
 
     <div class="container my-5">
         <section class="team" id="team">
-            <div class="info col-md-4">
+            <div class="info">
                 <h3>Our Partners</h3>
                 <p>At Al Hamdan & Alaamri, we seek, attract, and celebrate only the leading lawyers and specialists of their respective fields.</p>
-                <div class="viewport">
-                    <div class="slider">
-                        <div class="slide">
-                            <img src="./assets/parteners/p1.jpg" alt="" srcset="">
+                <a class="readmore" href="./sides/partners.html">
+                    <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
+                        <path d="M41 5.5H0H41Z" fill="currentColor"></path>
+                        <path d="M41 5.5H0" stroke="currentColor"></path>
+                    </svg>
+                    View All
+                </a>
+                <div class="teamViewer">
+                    <div class="viewport">
+                        <div class="slider">
+                            <div class="slide">
+                                <img src="./assets/parteners/p2.jpg" alt="" srcset="">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/parteners/p1.jpg" alt="" srcset="">
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="./assets/parteners/p2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="details">
+                        <div class="textContainer">
+                            <p class="name">DR. ABDULLAH ALHAMDAN</p>
+                            <p class="position">PARTNER</p>
+                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur provident fuga molestiae illum ipsam at voluptatum dicta esse vel? Sint, voluptatem. Repudiandae fuga aspernatur tempora voluptatem, velit blanditiis dolores!</p>
+                            <a class="readmore" href="./sides/teamMember.html">
+                                <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
+                                    <path d="M41 5.5H0H41Z" fill="currentColor"></path>
+                                    <path d="M41 5.5H0" stroke="currentColor"></path>
+                                </svg>
+                                Know More About
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -363,18 +422,6 @@
                     </button>
                     <button class="right"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
-            </div>
-
-            <div class="img col-md-8">
-                <img src="./assets/photos/team.webp" alt="" srcset="">
-                <a href="#">
-                    <svg width="42" height="11" viewBox="0 0 42 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M36.5156 1L41 5.5L36.5156 10" stroke="currentColor"></path>
-                        <path d="M41 5.5H0H41Z" fill="currentColor"></path>
-                        <path d="M41 5.5H0" stroke="currentColor"></path>
-                    </svg>
-                    Meet Our Partners
-                </a>
             </div>
         </section>
     </div>
@@ -555,5 +602,6 @@
     <script src="./scripts/landing/review.js"></script>
     <script src="./scripts/landing/team.js"></script>
     <script src="./scripts/landing/joinTeam.js"></script>
+    <script src="./scripts/dropDownBTNs.js"></script>
 </body>
 </html>

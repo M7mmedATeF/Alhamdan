@@ -1,0 +1,23 @@
+.servicesInner.sideTeam {
+    padding: 2rem 0;
+}
+
+.servicesInner.sideTeam .container .img {
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+}
+
+.servicesInner.sideTeam .container .img img {
+    width: 100%;
+}
+
+.servicesInner.sideTeam .container .details .position {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #999;
+    letter-spacing: 2px;
+}

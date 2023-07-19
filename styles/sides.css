@@ -1,0 +1,9 @@
+.landingVideo {
+    max-height: 35vh;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.landingVideo .overlay {
+    justify-content: center;
+}

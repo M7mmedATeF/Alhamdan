@@ -1,0 +1,120 @@
+.aboutUsInner {
+    margin: 3rem 0;
+}
+
+.aboutUsInner .head {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutUsInner .head .img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.aboutUsInner .head .sides p:first-of-type {
+    font-size: 1rem;
+    color: #aaa;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.aboutUsInner .head .sides h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.aboutUsInner .head .sides p {
+    color: #999;
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.AboutChoose {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.AboutChoose p.quest {
+    font-size: 1rem;
+    color: #aaa;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.AboutChoose h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.AboutChoose .reasons {
+    color: #777;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.AboutChoose .nums {
+    margin: 3rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.AboutChoose .nums .num {
+    position: relative;
+}
+
+.AboutChoose .nums .num::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100%;
+    opacity: 0.05;
+    filter: blur(10px);
+    background-color: var(--main-color);
+}
+
+.AboutChoose .nums .number {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.AboutChoose .nums p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 426px) {
+
+    .aboutUsInner .head {
+        padding: 0 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .aboutUsInner .head .img {
+        display: none;
+    }
+
+    .AboutChoose h2 {
+        font-size: 2.8rem;
+    }
+
+    .AboutChoose .reasons {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .AboutChoose .nums {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,11 @@
+.sideContact .head .connection p {
+    font-size: 2rem;
+}
+
+.sideContact .cvForm .row {
+    display: block !important;
+}
+
+.sideContact .row .formControl input {
+    width: 100%;
+}

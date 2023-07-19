@@ -1,4 +1,4 @@
-.team{
+.team {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -24,36 +24,62 @@
     line-height: 2rem;
 }
 
-.team .img{
-    text-align: right;
-    padding: 3rem;
-}
-
-.team .img img{
-    width: 100%;
-}
-
-.team .img a{
+.team .info a.readmore {
     display: inline-block;
-    color: var(--main-light);
-    font-size: 1.2rem;
-    margin: 3rem 0;
+    color: var(--main-color);
+    margin-bottom: 20px;
 }
 
-.team .info .viewport{
+.team .info .teamViewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.team .info .teamViewer .textContainer {
+    position: relative;
+    opacity: 1;
+    top: 0%;
+    transition: 0.3s all ease-in-out;
+}
+
+.team .info .teamViewer .textContainer.hide {
+    top: -20%;
+    opacity: 0;
+}
+
+.team .info .teamViewer .textContainer .name {
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.team .info .teamViewer .textContainer .position {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.team .info .teamViewer .textContainer .details {
+    font-size: 1.1rem;
+}
+
+.team .info .viewport {
     width: 422px;
     height: 516px;
     overflow: hidden;
 }
 
-.team .info .viewport .slider{
+.team .info .viewport .slider {
     display: inline-flex;
     position: relative;
     left: 0;
     transition: 0.3s left ease-in-out;
 }
 
-.team .info .viewport .slider .slide{
+.team .info .viewport .slider .slide {
     width: 422px;
     height: 516px;
     padding: 0;
@@ -62,17 +88,17 @@
     align-items: center;
 }
 
-.team .info .viewport .slider .slide img{
+.team .info .viewport .slider .slide img {
     object-fit: cover;
 }
 
-.team .info .controls{
+.team .info .controls {
     display: flex;
     justify-content: flex-end;
     margin: 3rem 10px;
 }
 
-.team .info .controls button{
+.team .info .controls button {
     cursor: pointer;
     will-change: padding;
     font-size: 1.3rem;
@@ -83,39 +109,39 @@
     transition: 0.2s padding ease-in;
 }
 
-.team .info .controls button:hover{
+.team .info .controls button:hover {
     padding: 10px 30px;
 }
 
-.team .info .controls button:nth-child(2){
+.team .info .controls button:nth-child(2) {
     border-left: none;
     border-right: none;
 }
 
-.team button.control i:first-child{
+.team button.control i:first-child {
     display: none;
 }
 
-.team button.control.play i:last-child{
+.team button.control.play i:last-child {
     display: inline-block;
 }
 
-.team button.control.play i:first-child{
+.team button.control.play i:first-child {
     display: inline-block;
 }
 
-.team button.control.play i:last-child{
+.team button.control.play i:last-child {
     display: none;
 }
 
 @media only screen and (max-width: 769px) {
 
-    .team .info .viewport{
+    .team .info .viewport {
         width: 250px;
         height: 316px;
     }
-    
-    .team .info .viewport .slider .slide{
+
+    .team .info .viewport .slider .slide {
         width: 250px;
         height: 316px;
         overflow: hidden;
@@ -126,7 +152,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .team .info {
         position: static;
     }
@@ -134,16 +160,16 @@
 
 
 @media only screen and (max-width: 426px) {
-    .team{
+    .team {
         flex-direction: column;
         margin-bottom: 2rem;
     }
-    
-    .team .img img{
+
+    .team .img img {
         display: none;
     }
-    
-    .team .img a{
+
+    .team .img a {
         margin: 0;
     }
 
@@ -151,7 +177,7 @@
         margin: 0 20px 20px;
         text-align: center;
     }
-    
+
     .team .info {
         display: flex;
         justify-content: center;
@@ -159,9 +185,20 @@
         flex-direction: column;
     }
 
-    .team .info .controls{
+    .team .info .controls {
         display: flex;
         justify-content: flex-end;
         margin: 1rem 0;
+    }
+
+    .team .info .teamViewer {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .team .info .teamViewer .viewport {
+        justify-self: center;
     }
 }
