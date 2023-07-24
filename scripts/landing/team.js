@@ -15,13 +15,13 @@ let teamAutoPlay = true;
 let texts = [
   {
     name: "DR. ABDULLAH ALHAMDAN",
-    position: "PARTNER",
+    position: "team member",
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur provident fuga molestiae illum ipsam at voluptatum dicta esse vel? Sint, voluptatem. Repudiandae fuga aspernatur tempora voluptatem, velit blanditiis dolores!",
   },
   {
     name: "ABDULLAH ALAAMRI",
-    position: "PARTNER",
+    position: "team member",
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur provident fuga molestiae illum ipsam at voluptatum dicta esse vel? Sint, voluptatem. Repudiandae fuga aspernatur tempora voluptatem, velit blanditiis dolores!",
   },

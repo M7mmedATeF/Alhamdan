@@ -1,27 +1,27 @@
 .news {
-    margin: 10rem 0;
+    margin: 5rem 0 0;
 }
 
-.news .head h3{
+.news .head h3 {
     margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 800;
 }
 
-.news .head p{
+.news .head p {
     color: #82858a;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.8rem;
 }
 
-.news .sliderContainer{
+.news .sliderContainer {
     position: relative;
     display: flex;
     justify-content: flex-end;
 }
 
-.news .sliderContainer button{
+.news .sliderContainer button {
     will-change: background-color, transform;
     cursor: pointer;
     background-color: var(--secondary-bg);
@@ -35,18 +35,18 @@
     transition: 0.2s all ease-out;
 }
 
-.news .sliderContainer button:hover{
+.news .sliderContainer button:hover {
     background-color: var(--main-color);
 }
 
-.news .sliderContainer .viewport{
+.news .sliderContainer .viewport {
     position: relative;
     width: 70vw;
     margin-right: 3rem;
     overflow-x: hidden;
 }
 
-.news .sliderContainer .counter{
+.news .sliderContainer .counter {
     position: absolute;
     left: 5rem;
     top: 20px;
@@ -55,7 +55,7 @@
     transform: rotate(-90deg);
 }
 
-.news .sliderContainer a.readmore{
+.news .sliderContainer a.readmore {
     position: absolute;
     bottom: -1.7rem;
     left: 34%;
@@ -65,7 +65,7 @@
     font-size: 1.2rem;
 }
 
-.news .sliderContainer .viewport .slider{
+.news .sliderContainer .viewport .slider {
     will-change: left;
     position: relative;
     left: 0;
@@ -75,7 +75,7 @@
     transition: 0.3s left ease-in-out;
 }
 
-.news .sliderContainer .viewport .slider .slide{
+.news .sliderContainer .viewport .slider .slide {
     display: inline-block;
     padding: 0 2rem;
     border-left: 1px solid #ddd;
@@ -85,33 +85,33 @@
     max-width: calc(70vw / 3);
 }
 
-.news .sliderContainer .viewport .slider .slide:last-child{
+.news .sliderContainer .viewport .slider .slide:last-child {
     border-right: 1px solid #ddd;
 }
 
-.news .sliderContainer .viewport .slider .slide .headline{
+.news .sliderContainer .viewport .slider .slide .headline {
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
-.news .sliderContainer .viewport .slider .slide .date{
+.news .sliderContainer .viewport .slider .slide .date {
     color: #999;
     margin-bottom: 10px;
 }
 
-.news .sliderContainer .viewport .slider .slide img{
+.news .sliderContainer .viewport .slider .slide img {
     width: 100%;
 }
 
 @media only screen and (max-width: 426px) {
-    .controls{
+    .controls {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2rem;
     }
-    
-    .news .sliderContainer button{
+
+    .news .sliderContainer button {
         will-change: background-color, transform;
         cursor: pointer;
         background-color: var(--secondary-bg);
@@ -123,27 +123,27 @@
         transform: unset;
     }
 
-    .news .sliderContainer{
+    .news .sliderContainer {
         align-items: center;
     }
 
-    .news .sliderContainer .counter{
+    .news .sliderContainer .counter {
         position: static;
         z-index: 10;
         color: #999;
         transform: rotate(-90deg);
     }
 
-    .news .sliderContainer a.readmore{
+    .news .sliderContainer a.readmore {
         position: static;
         transform: unset;
     }
-    
-    .news .sliderContainer{
+
+    .news .sliderContainer {
         flex-direction: column;
     }
 
-    .news .sliderContainer .viewport .slider .slide{
+    .news .sliderContainer .viewport .slider .slide {
         width: 70vw;
         min-width: 70vw;
         max-width: 70vw;

@@ -1,20 +1,21 @@
-.join{
+.join {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
-.join h3{
+.join h3 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.join .connection{
+.join .connection {
     margin-left: 2rem;
     font-size: 2rem;
 }
 
-.join .connection button{
+.join .connection button {
     cursor: pointer;
     background-color: transparent;
     padding: 20px 0;
@@ -22,7 +23,7 @@
     color: var(--main-light);
 }
 
-.cvForm .overlay{
+.cvForm .overlay {
     position: fixed;
     inset: 0;
     background-color: #000000a7;
@@ -38,7 +39,7 @@
     opacity: 0;
 }
 
-.cvForm form{
+.cvForm form {
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -55,7 +56,7 @@
     z-index: 21;
 }
 
-.cvForm form h5{
+.cvForm form h5 {
     display: block;
     width: 100%;
     text-align: left;
@@ -63,22 +64,22 @@
     color: var(--main-color);
 }
 
-.cvForm form .formControls{
+.cvForm form .formControls {
     margin: 20px 0;
 }
 
-.cvForm form .formControls .formControl{
+.cvForm form .formControls .formControl {
     margin: 20px 0;
 }
 
-.cvForm form .formControls .row{
+.cvForm form .formControls .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
 }
 
 
-.cvForm form .formControls .row .file{
+.cvForm form .formControls .row .file {
     position: relative;
     border-bottom: 1px solid #999;
     width: 100%;
@@ -89,17 +90,17 @@
     padding-left: 5px;
 }
 
-.cvForm form .formControls .row .file .filePrev{
+.cvForm form .formControls .row .file .filePrev {
     display: none;
     margin-top: 20px;
 }
 
-.cvForm form .formControls .row .file.added .filePrev{
+.cvForm form .formControls .row .file.added .filePrev {
     display: block;
     margin-top: 20px;
 }
 
-.cvForm form .formControls .row .file .filePrev .fileView{
+.cvForm form .formControls .row .file .filePrev .fileView {
     position: relative;
     display: flex;
     padding: 10px;
@@ -107,12 +108,12 @@
     margin-bottom: 5px;
 }
 
-.cvForm form .formControls .row .file .filePrev .fileView p{
+.cvForm form .formControls .row .file .filePrev .fileView p {
     margin-right: 30px;
     font-size: 14px;
 }
 
-.cvForm form .formControls .row .file .filePrev .fileView button{
+.cvForm form .formControls .row .file .filePrev .fileView button {
     position: absolute;
     top: 0;
     right: 0;
@@ -122,30 +123,30 @@
     background-color: transparent;
 }
 
-.cvForm form .formControls .row .file .fileName{
+.cvForm form .formControls .row .file .fileName {
     margin-top: 20px;
 }
 
-.cvForm form .formControls .row .file.added .fileName{
+.cvForm form .formControls .row .file.added .fileName {
     display: none;
 }
 
-.cvForm form .formControls .row .file span{
+.cvForm form .formControls .row .file span {
     font-size: 0.8rem;
 }
 
-.cvForm form .formControls .row .file i{
+.cvForm form .formControls .row .file i {
     margin: 20px 0 0 20px;
 }
 
-.cvForm form .formControls .row .file input{
+.cvForm form .formControls .row .file input {
     cursor: pointer;
     position: absolute;
     inset: 0;
     opacity: 0;
 }
 
-.cvForm form .formControls .formControl input{
+.cvForm form .formControls .formControl input {
     will-change: border, color;
     border-bottom: 1px solid #999;
     font-size: 2rem;
@@ -155,19 +156,19 @@
     transition: 0.2s all ease-in;
 }
 
-.cvForm form .formControls .formControl input:focus{
+.cvForm form .formControls .formControl input:focus {
     border-bottom: 1px solid var(--main-color);
     color: var(--main-light);
 }
 
-.cvForm form .formControls .formControl.msg{
+.cvForm form .formControls .formControl.msg {
     display: inline-flex;
     flex-direction: column;
     font-size: 2rem;
     color: #999;
 }
 
-.cvForm form .formControls .formControl.msg textarea{
+.cvForm form .formControls .formControl.msg textarea {
     padding: 5px;
     margin-top: 20px;
     border: 1px solid #999;
@@ -177,11 +178,11 @@
     min-height: 150px;
 }
 
-.cvForm form .submition{
+.cvForm form .submition {
     text-align: right;
 }
 
-.cvForm form .submition button{
+.cvForm form .submition button {
     cursor: pointer;
     padding: 10px 20px;
     font-size: 2rem;
@@ -190,45 +191,45 @@
 }
 
 @media only screen and (max-width: 769px) {
-    
-    .cvForm form .formControls .row{
+
+    .cvForm form .formControls .row {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
     }
 
-    .cvForm form{
+    .cvForm form {
         width: 50vw;
     }
 
-    .cvForm form .formControls .formControl{
+    .cvForm form .formControls .formControl {
         width: 100%;
     }
 
-    .cvForm form .formControls .formControl input{
+    .cvForm form .formControls .formControl input {
         width: 100%;
     }
 
-    .cvForm form .formControls .formControl.msg textarea{
+    .cvForm form .formControls .formControl.msg textarea {
         width: 100%;
         font-size: 1.5rem;
     }
 
-    .cvForm form .formControls .formControl input{
+    .cvForm form .formControls .formControl input {
         font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 426px) {
-    .join{
+    .join {
         flex-direction: column-reverse;
     }
 
-    .join .img{
+    .join .img {
         margin-bottom: 2rem;
     }
 
-    .cvForm form{
+    .cvForm form {
         width: 90vw;
     }
 }

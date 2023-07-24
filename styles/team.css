@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     min-height: 70vh;
-    margin: 10rem 0;
+    margin: 0 0 10rem;
 }
 
 .team .info {
@@ -13,12 +13,12 @@
 
 .team .info h3 {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     letter-spacing: 2px;
 }
 
 .team .info p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
     margin: 20px 0;
     line-height: 2rem;

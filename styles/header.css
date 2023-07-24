@@ -1,4 +1,4 @@
-.landingVideo{
+.landingVideo {
     max-height: 88vh;
     overflow: hidden;
     display: flex;
@@ -7,11 +7,11 @@
     position: relative;
 }
 
-.landingVideo video{
+.landingVideo video {
     width: 100%;
 }
 
-.landingVideo .overlay{
+.landingVideo .overlay {
     position: absolute;
     inset: 0;
     z-index: 0;
@@ -23,20 +23,20 @@
     flex-direction: column;
 }
 
-.landingVideo .overlay p{
+.landingVideo .overlay p {
     font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.landingVideo .scroll{
+.landingVideo .scroll {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     bottom: 2rem;
 }
 
-.landingVideo .scroll .mouse{
+.landingVideo .scroll .mouse {
     cursor: pointer;
     position: relative;
     background-color: transparent;
@@ -46,7 +46,7 @@
     border-radius: 15px;
 }
 
-.landingVideo .scroll .mouse .scroller{
+.landingVideo .scroll .mouse .scroller {
     position: absolute;
     bottom: calc(100% - 17px);
     width: 5px;
@@ -72,17 +72,17 @@
 }
 
 @media only screen and (max-width: 426px) {
-    .landingVideo .overlay p{
+    .landingVideo .overlay p {
         font-size: 3rem;
     }
-    
-    .landingVideo video{
+
+    .landingVideo video {
         object-fit: cover;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .landingVideo .overlay p{
-        font-size: 3rem;
+    .landingVideo .overlay p {
+        font-size: 2rem;
     }
 }

@@ -80,21 +80,11 @@
     background-color: transparent;
     text-align: left;
     color: #fff;
-    padding: 20px 4rem;
+    padding: 20px 4rem 20px 20px;
     font-size: 1.5rem;
     font-weight: 500;
     border-bottom: 0.3px solid #fff;
     transition: 0.3s all ease-in-out;
-}
-
-.expert button::before {
-    position: absolute;
-    font-size: 0.8rem;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    counter-increment: exp;
-    content: "00-" counter(exp);
 }
 
 .expert button:hover {
